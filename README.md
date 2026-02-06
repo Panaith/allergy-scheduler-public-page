@@ -1,35 +1,20 @@
-# Allergy Scheduler
+# Introduction 
+TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
 
-<img src="assets/allergy_scheduler_logo_large_in_circle_1024x1024.jpg" width="200" />
+# Getting Started
+TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
+1.	Installation process
+2.	Software dependencies
+3.	Latest releases
+4.	API references
 
-An application to help users track and manage allergy-related appointments and schedules.
+# Build and Test
+TODO: Describe and show how to build your code and run the tests. 
 
-## 🚀 Features
+# Contribute
+TODO: Explain how other users and developers can contribute to make your code better. 
 
-- User Authentication (Email/Password & Google Sign-In)
-- Patient Management (Profiles, History)
-- **Dose Tracking**: Detailed log of medication administration.
-- **Dosage Summaries**: Aggregated view of treatment history with PDF Export support.
-- **Protocols**: Management of medical protocols and allergens.
-- **Doctor Integration**: Manage contact info for medical professionals.
-- **Customizable**: Themes, Languages, and Notification settings.
-
-<img src="assets/2.png" width="300" />
-
-## 📚 Documentation
-
-The project documentation is organized into specific guides for different audiences:
-
-| Document | Audience | Description |
-| :--- | :--- | :--- |
-| [**📖 USER_MANUAL.md**](USER_MANUAL.md) | **End Users** | Guide on how to use the application features and settings. |
-| [**🤖 AGENTS.md**](AGENTS.md) | **AI Agents** | "Memory" file. Contains Architectural decisions, Project Structure, and detailed component breakdown. |
-| [**💻 DEVELOPMENT.md**](DEVELOPMENT.md) | **Developers** | **Start Here**. Setup instructions, build commands (`build_runner`, `l10n`), and workflow guidelines. |
-
-## 📂 Project Structure
-
--   `frontend/`: Flutter mobile application.
--   `backend/`: Firebase Cloud Functions (TypeScript).
-
----
-*Generated with the help of Gemini.*
+If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
+- [ASP.NET Core](https://github.com/aspnet/Home)
+- [Visual Studio Code](https://github.com/Microsoft/vscode)
+- [Chakra Core](https://github.com/Microsoft/ChakraCore)
