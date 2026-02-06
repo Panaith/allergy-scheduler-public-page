@@ -1,5 +1,7 @@
 # Allergy Scheduler
 
+![Allergy Scheduler Logo](assets/allergy_scheduler_logo_large_in_circle_1024x1024.jpg)
+
 An application to help users track and manage allergy-related appointments and schedules.
 
 ## 🚀 Features
@@ -11,6 +13,8 @@ An application to help users track and manage allergy-related appointments and s
 - **Protocols**: Management of medical protocols and allergens.
 - **Doctor Integration**: Manage contact info for medical professionals.
 - **Customizable**: Themes, Languages, and Notification settings.
+
+![Dashboard Screenshot](assets/2.png)
 
 ## 📚 Documentation
 

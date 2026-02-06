@@ -4,9 +4,15 @@ Welcome to Allergy Scheduler! This guide will help you get started and make the 
 
 ## 1. Getting Started
 
-### Creating an Account
+### 1. Authentication
+Securely access your data using your **Email & Password** or **Google Sign-In**.
 
-- **Sign up:** When you first open the app, you'll be prompted to create an account. You can sign up using your email and a password, or you can use your Google account for a faster sign-up process.
+![Sign In Screen](assets/1.png)
+
+### 2. User Profile
+Manage your account details and view your unique User ID.
+
+![Profile Settings](assets/16.png)
 
 ### Logging In
 
@@ -20,12 +26,17 @@ Allergy Scheduler offers three tiers to suit your needs. You can upgrade at any 
 
 | Feature                    | Free       | Plus       | Premium      |
 | :------------------------- | :--------- | :--------- | :----------- |
-| **Basic Tracking**         | ✅         | ✅         | ✅           |
+| **Basic Tracking**         | ✅ Open    | ✅ Open    | ✅ Open      |
 | **Info & Warnings**        | 🔒 Locked  | ✅ Open    | ✅ Open      |
 | **Dosage Groups**          | 🔒 Locked  | ✅ Open    | ✅ Open      |
 | **Usage Statistics**       | 🔒 Locked  | 🔒 Locked  | ✅ Open      |
 | **Settings Customization** | 🔒 Locked  | 🔒 Locked  | ✅ Open      |
 | **PDF Export**             | 🔒 Locked  | 🔒 Locked  | ✅ Open      |
+
+- **Premium**: Unlocks advanced features like **Unlimited Patients**, **PDF Export** for reports, and extended history.
+
+![Premium Menu](assets/15_1.png)
+![Subscription Management](assets/22.png)
 
 ## 3. Managing Patients
 
@@ -36,6 +47,9 @@ The app allows you to manage one or more patients, each with their own treatment
 1.  From the main screen, tap on the **Add Patient** button.
 2.  Fill in the patient's details, such as their name, date of birth, any known allergies, and their **Timezone**.
 3.  Tap **Save** to create the patient profile.
+- **Deleting a Patient**: Remove a patient profile from your account.
+
+![Patient Settings](assets/21.png)
 
 > **Note on Timezone**: The app uses the patient's timezone to correctly determine the end of the day for automatic "Day Off" dose creation and for generating accurate PDF reports.
 
@@ -60,6 +74,10 @@ The **Doses** tab is where you can log and view individual medication doses.
   - **Day Off:** Marking a dose as a "Day Off" prevents adding any other doses for that day. It allows you to log a planned break in treatment.
   - **Seriously Ill:** Use this when the patient is too ill for the full protocol. Unlike "Day Off", you can still add other doses on the same day if the condition improves or changes. This status does not check for time intervals between doses.
 
+![Home Screen](assets/2.png)
+![Doses Tab](assets/3.png)
+![Add Dose](assets/4.png)
+
 ### Info and Warnings
 
 The app automatically analyzes your dose history and may display warnings at the top of the Home screen if it detects issues, such as:
@@ -74,6 +92,9 @@ The **Dosage Groups** tab provides a summary of all doses, grouped by dosage amo
  
  - **Exporting to PDF (Premium)**: You can generate a detailed report of your dosage history by tapping the **Export to PDF** button. This will open an **Elite PDF Viewer** (powered by pdfrx) where you can review the document with multi-touch zoom, navigate pages, and review all details. From there, you can choose to **save**, **share**, or **print** the report. This feature requires a **Premium** subscription.
 
+![Dosage Groups](assets/7.png)
+![Dosage Groups PDF](assets/9.png)
+
 ## 6. Usage Statistics
 
 The **Usage Statistics** tab provides a detailed breakdown of your treatment history.
@@ -85,16 +106,26 @@ The **Usage Statistics** tab provides a detailed breakdown of your treatment his
 - **Filtering:** You can filter the statistics to show data for all time, a specific year, or a specific month using the dropdown menus at the top of the page.
 - **Monthly History:** A bar chart displaying the number of doses administered each month. If a year is selected, it shows the months of that year.
 
+![Usage Statistics](assets/12.png)
+![Usage Stats PDF](assets/14.png)
+
 ## 7. Managing Protocols
 
 The **Protocols** tab allows you to set up and manage treatment protocols.
 
 - **Creating a protocol:** You can create a new protocol by specifying a name, dosage, and frequency.
+- **Managing Allergens**: Define specific allergens for each protocol.
+
+![Protocols List](assets/10.png)
+![Add Protocol](assets/11.png)
 - **Viewing protocols:** The Protocols screen lists all your saved protocols, giving you a quick overview of your treatment plans.
 
 ## 8. Doctor Information
 
 - **Doctor Settings:** In the **Doctor** tab, you can save and update your doctor's contact information for easy access.
+- **Contact Information**: Save phone numbers (with quick dial), emails, and addresses.
+
+
 
 ## 9. App Settings
 
@@ -107,6 +138,8 @@ The **Settings** tab allows you to customize the app to your preferences.
 - **Language:** Change the app's display language.
 
 > **Note:** Your settings for **Date & Time Format** and **Language** will also be used when generating PDF reports to ensure they are consistent with your preferences.
+
+![User Settings](assets/17.png)
 
 ---
 
