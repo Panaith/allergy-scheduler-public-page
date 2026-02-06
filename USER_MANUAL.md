@@ -35,8 +35,7 @@ Allergy Scheduler offers three tiers to suit your needs. You can upgrade at any 
 
 - **Premium**: Unlocks advanced features like **Unlimited Patients**, **PDF Export** for reports, and extended history.
 
-<img src="assets/15_1.png" width="300" />
-<img src="assets/22.png" width="300" />
+<img src="assets/15_1.png" width="300" /> <img src="assets/22.png" width="300" />
 
 ## 3. Managing Patients
 
@@ -74,9 +73,7 @@ The **Doses** tab is where you can log and view individual medication doses.
   - **Day Off:** Marking a dose as a "Day Off" prevents adding any other doses for that day. It allows you to log a planned break in treatment.
   - **Seriously Ill:** Use this when the patient is too ill for the full protocol. Unlike "Day Off", you can still add other doses on the same day if the condition improves or changes. This status does not check for time intervals between doses.
 
-<img src="assets/2.png" width="300" />
-<img src="assets/3.png" width="300" />
-<img src="assets/4.png" width="300" />
+<img src="assets/2.png" width="300" /> <img src="assets/3.png" width="300" /> <img src="assets/4.png" width="300" />
 
 ### Info and Warnings
 
@@ -92,8 +89,7 @@ The **Dosage Groups** tab provides a summary of all doses, grouped by dosage amo
  
  - **Exporting to PDF (Premium)**: You can generate a detailed report of your dosage history by tapping the **Export to PDF** button. This will open an **Elite PDF Viewer** (powered by pdfrx) where you can review the document with multi-touch zoom, navigate pages, and review all details. From there, you can choose to **save**, **share**, or **print** the report. This feature requires a **Premium** subscription.
 
-<img src="assets/7.png" width="300" />
-<img src="assets/9.png" width="300" />
+<img src="assets/7.png" width="300" /> <img src="assets/9.png" width="300" />
 
 ## 6. Usage Statistics
 
@@ -106,8 +102,7 @@ The **Usage Statistics** tab provides a detailed breakdown of your treatment his
 - **Filtering:** You can filter the statistics to show data for all time, a specific year, or a specific month using the dropdown menus at the top of the page.
 - **Monthly History:** A bar chart displaying the number of doses administered each month. If a year is selected, it shows the months of that year.
 
-<img src="assets/12.png" width="300" />
-<img src="assets/14.png" width="300" />
+<img src="assets/12.png" width="300" /> <img src="assets/14.png" width="300" />
 
 ## 7. Managing Protocols
 
@@ -116,8 +111,7 @@ The **Protocols** tab allows you to set up and manage treatment protocols.
 - **Creating a protocol:** You can create a new protocol by specifying a name, dosage, and frequency.
 - **Managing Allergens**: Define specific allergens for each protocol.
 
-<img src="assets/10.png" width="300" />
-<img src="assets/11.png" width="300" />
+<img src="assets/10.png" width="300" /> <img src="assets/11.png" width="300" />
 - **Viewing protocols:** The Protocols screen lists all your saved protocols, giving you a quick overview of your treatment plans.
 
 ## 8. Doctor Information
