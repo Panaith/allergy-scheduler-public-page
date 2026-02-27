@@ -5,11 +5,13 @@ Welcome to Allergy Scheduler! This guide will help you get started and make the 
 ## 1. Getting Started
 
 ### 1. Authentication
+
 Securely access your data using your **Email & Password** or **Google Sign-In**.
 
 <img src="assets/1.png" width="300" />
 
 ### 2. User Profile
+
 Manage your account details and view your unique User ID.
 
 <img src="assets/16.png" width="300" />
@@ -24,14 +26,14 @@ Allergy Scheduler offers three tiers to suit your needs. You can upgrade at any 
 
 ### 💎 Summary of Subscription Tiers
 
-| Feature                    | Free       | Plus       | Premium      |
-| :------------------------- | :--------- | :--------- | :----------- |
-| **Basic Tracking**         | ✅ Open    | ✅ Open    | ✅ Open      |
-| **Info & Warnings**        | 🔒 Locked  | ✅ Open    | ✅ Open      |
-| **Dosage Groups**          | 🔒 Locked  | ✅ Open    | ✅ Open      |
-| **Usage Statistics**       | 🔒 Locked  | 🔒 Locked  | ✅ Open      |
-| **Settings Customization** | 🔒 Locked  | 🔒 Locked  | ✅ Open      |
-| **PDF Export**             | 🔒 Locked  | 🔒 Locked  | ✅ Open      |
+| Feature                    | Free      | Plus      | Premium |
+| :------------------------- | :-------- | :-------- | :------ |
+| **Basic Tracking**         | ✅ Open   | ✅ Open   | ✅ Open |
+| **Info & Warnings**        | 🔒 Locked | ✅ Open   | ✅ Open |
+| **Dosage Groups**          | 🔒 Locked | ✅ Open   | ✅ Open |
+| **Usage Statistics**       | 🔒 Locked | 🔒 Locked | ✅ Open |
+| **Settings Customization** | 🔒 Locked | 🔒 Locked | ✅ Open |
+| **PDF Export**             | 🔒 Locked | 🔒 Locked | ✅ Open |
 
 - **Premium**: Unlocks advanced features like **Unlimited Patients**, **PDF Export** for reports, and extended history.
 
@@ -46,6 +48,7 @@ The app allows you to manage one or more patients, each with their own treatment
 1.  From the main screen, tap on the **Add Patient** button.
 2.  Fill in the patient's details, such as their name, date of birth, any known allergies, and their **Timezone**.
 3.  Tap **Save** to create the patient profile.
+
 - **Deleting a Patient**: Remove a patient profile from your account.
 
 <img src="assets/21.png" width="300" />
@@ -67,6 +70,7 @@ The **Doses** tab is where you can log and view individual medication doses.
 
 - **Adding a dose:** Tap the **+** button to add a new dose. You'll be asked to enter the dosage amount, the time it was administered, and any relevant notes.
 - **Viewing dose history:** The Doses screen displays a list of all past doses. You can filter this list by date, dosage amount, medical status, protocol, or use text search to find specific entries.
+  - _Note on Filter Limitations:_ Due to core database design properties, you cannot combine "Text Search", "Date", and "Dosage" at the exact same time (applying one overrides the other, with Text Search taking highest priority). You also cannot select multiple specific specific medical statuses at the same time. This ensures search results are always lightning-fast.
 - **Editing or deleting a dose:** You can swipe left on a dose to edit or delete it.
 - **Validations:** The app will warn you if you try to add a dose with a future date or if the time interval between doses is too short, but you can choose to proceed if necessary.
 - **Special Statuses:**
@@ -86,8 +90,9 @@ The app automatically analyzes your dose history and may display warnings at the
 ## 5. Dosage Summaries
 
 The **Dosage Groups** tab provides a summary of all doses, grouped by dosage amount. This makes it easy to see how often each dosage has been administered.
- 
- - **Exporting to PDF (Premium)**: You can generate a detailed report of your dosage history by tapping the **Export to PDF** button. This will open an **Elite PDF Viewer** (powered by pdfrx) where you can review the document with multi-touch zoom, navigate pages, and review all details. From there, you can choose to **save**, **share**, or **print** the report. This feature requires a **Premium** subscription.
+
+- **Filtering**: Similar to individual doses, you can dynamically filter dosage groups by combining date ranges, dosage amounts, and mutually-exclusive specific statuses.
+- **Exporting to PDF (Premium)**: You can generate a detailed report of your dosage history by tapping the **Export to PDF** button. This will open an **Elite PDF Viewer** (powered by pdfrx) where you can review the document with multi-touch zoom, navigate pages, and review all details. From there, you can choose to **save**, **share**, or **print** the report. This feature requires a **Premium** subscription.
 
 <img src="assets/7.png" width="300" /> <img src="assets/9.png" width="300" />
 
@@ -112,14 +117,13 @@ The **Protocols** tab allows you to set up and manage treatment protocols.
 - **Managing Allergens**: Define specific allergens for each protocol.
 
 <img src="assets/10.png" width="300" /> <img src="assets/11.png" width="300" />
+
 - **Viewing protocols:** The Protocols screen lists all your saved protocols, giving you a quick overview of your treatment plans.
 
 ## 8. Doctor Information
 
 - **Doctor Settings:** In the **Doctor** tab, you can save and update your doctor's contact information for easy access.
 - **Contact Information**: Save phone numbers (with quick dial), emails, and addresses.
-
-
 
 ## 9. App Settings
 
