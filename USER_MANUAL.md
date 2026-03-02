@@ -43,26 +43,25 @@ Allergy Scheduler offers three tiers to suit your needs. You can upgrade at any 
 
 The app allows you to manage one or more patients, each with their own treatment schedules and information.
 
-### Creating a Patient
+### Creating or Joining a Patient
 
 1.  From the main screen, tap on the **Add Patient** button.
-2.  Fill in the patient's details, such as their name, date of birth, any known allergies, and their **Timezone**.
-3.  Tap **Save** to create the patient profile.
+2.  You can then choose between two options:
+    - **Create New Patient**: Fill in the patient's details (name, date of birth, allergens, and **Timezone**) and tap **Save**.
+    - **Request to Join a Patient**: Enter the 20-character **Patient ID** (shared with you by the admin) and your name. Tap **Join** to send a request.
+3.  The patient admin will receive a notification and can accept or decline your request from their **Patient Settings**.
 
-- **Deleting a Patient**: Remove a patient profile from your account.
+### Managing Members & Invitations
 
-<img src="assets/21.png" width="300" />
-
-> **Note on Timezone**: The app uses the patient's timezone to correctly determine the end of the day for automatic "Day Off" dose creation and for generating accurate PDF reports.
-
-### Switching Between Patients
-
-- If you have multiple patients, you can switch between them using the patient selector at the top of the screen.
-
-### Editing Patient Information
+If you are a patient administrator, you can manage who else has access to the patient's data.
 
 1.  Go to the **Patient Settings** tab.
-2.  Here you can edit the patient's details, manage who has access to the patient's data, and other settings.
+2.  **Invite by Email**: Tap the **+** button in the "Members" section, enter the user's email address, and tap **Invite**. Note: The user must already be registered with this email. They will receive a notification to join.
+3.  **Manage Requests**: Any pending "Join Requests" will appear at the top of the Patient Settings page. You can **Accept** or **Decline** them here.
+4.  **Copy Patient ID**: To let someone request access, tap the **Copy** icon next to the Patient ID to copy it to your clipboard and send it to them.
+5.  **Remove/Promote Members**: You can remove existing members or promote them to administrators.
+
+- **Deleting a Patient**: Remove a patient profile from your account. This action is permanent and only available to administrators.
 
 ## 4. Tracking Doses
 
