@@ -133,6 +133,7 @@ The **Settings** tab allows you to customize the app to your preferences.
 - **Theme Color:** Choose a custom seed color for the application theme.
 - **Material Version:** Toggle between Material 2 and Material 3 design systems.
 - **Language:** Change the app's display language.
+- **Notification Devices:** Manage the devices currently registered to receive notifications. You can see your current device and remove old devices you no longer use.
 
 > **Note:** Your settings for **Date & Time Format** and **Language** will also be used when generating PDF reports to ensure they are consistent with your preferences.
 
