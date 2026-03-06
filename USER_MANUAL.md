@@ -141,7 +141,7 @@ The **Settings** tab allows you to customize the app to your preferences.
 
 ## 10. Troubleshooting
 
-- **App refused to load due to Version Mismatch**: Allergy Scheduler enforces strict synchronization between the app version and the cloud server to prevent data corruption. If you see a screen asking you to "Update your app" or "Update backend", it means your app is out of date. Please visit the App Store / Google Play Store to download the latest version, or hard-refresh/clear your browser cache if you are using the Web version.
+- **App refused to load due to Version Mismatch**: Allergy Scheduler enforces strict synchronization between the app version and the cloud server to prevent data corruption. If you see a screen asking you to "Update your app" or "Update backend", it means your app is out of date. If you need to update the app, you will see an "Open Google Play" button that takes you directly to the store. Otherwise, please visit the App Store / Google Play Store to download the latest version, or hard-refresh/clear your browser cache if you are using the Web version.
 
 ---
 

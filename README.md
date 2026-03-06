@@ -20,16 +20,17 @@ An application to help users track and manage allergy-related appointments and s
 
 The project documentation is organized into specific guides for different audiences:
 
-| Document | Audience | Description |
-| :--- | :--- | :--- |
-| [**📖 USER_MANUAL.md**](USER_MANUAL.md) | **End Users** | Guide on how to use the application features and settings. |
-| [**🤖 AGENTS.md**](AGENTS.md) | **AI Agents** | "Memory" file. Contains Architectural decisions, Project Structure, and detailed component breakdown. |
+| Document                                | Audience       | Description                                                                                           |
+| :-------------------------------------- | :------------- | :---------------------------------------------------------------------------------------------------- |
+| [**📖 USER_MANUAL.md**](USER_MANUAL.md) | **End Users**  | Guide on how to use the application features and settings.                                            |
+| [**🤖 AGENTS.md**](AGENTS.md)           | **AI Agents**  | "Memory" file. Contains Architectural decisions, Project Structure, and detailed component breakdown. |
 | [**💻 DEVELOPMENT.md**](DEVELOPMENT.md) | **Developers** | **Start Here**. Setup instructions, build commands (`build_runner`, `l10n`), and workflow guidelines. |
 
 ## 📂 Project Structure
 
--   `frontend/`: Flutter mobile application.
--   `backend/`: Firebase Cloud Functions (TypeScript).
+- `frontend/`: Flutter mobile application.
+- `backend/`: Firebase Cloud Functions (TypeScript). Uses Local Emulator Suite for development.
 
 ---
-*Generated with the help of Gemini.*
+
+_Generated with the help of Gemini._
