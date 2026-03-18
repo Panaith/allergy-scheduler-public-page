@@ -69,7 +69,7 @@ The **Doses** tab is where you can log and view individual medication doses.
 
 - **Adding a dose:** Tap the **+** button to add a new dose. You'll be asked to enter the dosage amount, the time it was administered, and any relevant notes.
 - **Viewing dose history:** The Doses screen displays a list of all past doses. You can filter this list by date, dosage amount, medical status, protocol, or use text search to find specific entries.
-  - _Note on Filter Limitations:_ Due to core database design properties, you cannot combine "Text Search", "Date", and "Dosage" at the exact same time (applying one overrides the other, with Text Search taking highest priority). You also cannot select multiple specific specific medical statuses at the same time. This ensures search results are always lightning-fast.
+  - _Note on Filtering:_ To ensure search results are always fast and reliable, you can choose to filter by **either** Text Search, Date, **or** Dosage Range at one time. Applying a new filter of these types will replace the previous one. Special statuses (Health, Medication, Reaction) can also be filtered one at a time.
 - **Editing or deleting a dose:** You can swipe left on a dose to edit or delete it.
 - **Validations:** The app will warn you if you try to add a dose with a future date or if the time interval between doses is too short, but you can choose to proceed if necessary.
 - **Special Statuses:**
@@ -91,7 +91,7 @@ The app automatically analyzes your dose history and may display warnings at the
 The **Dosage Groups** tab provides a summary of all doses, grouped by dosage amount. This makes it easy to see how often each dosage has been administered.
 
 - **Filtering**: Similar to individual doses, you can dynamically filter dosage groups by combining date ranges, dosage amounts, and mutually-exclusive specific statuses.
-- **Exporting to PDF (Premium)**: You can generate a detailed report of your dosage history by tapping the **Export to PDF** button. This will open an **Elite PDF Viewer** (powered by pdfrx) where you can review the document with multi-touch zoom, navigate pages, and review all details. From there, you can choose to **save**, **share**, or **print** the report. This feature requires a **Premium** subscription.
+- **Exporting to PDF (Premium)**: You can generate a detailed report of your dosage history by tapping the **Export to PDF** button. This will open a dedicated **PDF Preview** page where the report is generated in real-time. You'll see a clear loading progress, and once ready, the report is displayed using an **Elite PDF Viewer** (powered by pdfrx) with multi-touch zoom and smooth navigation. From there, you can easily **save** to your device, **share** via other apps, or **print** the report. This feature requires a **Premium** subscription.
 
 <img src="assets/7.png" width="300" /> <img src="assets/9.png" width="300" />
 
@@ -118,6 +118,7 @@ The **Protocols** tab allows you to set up and manage treatment protocols.
 <img src="assets/10.png" width="300" /> <img src="assets/11.png" width="300" />
 
 - **Viewing protocols:** The Protocols screen lists all your saved protocols, giving you a quick overview of your treatment plans.
+- **Filtering:** You can filter protocols by date, name, or use text search to find specific entries.
 
 ## 8. Doctor Information
 

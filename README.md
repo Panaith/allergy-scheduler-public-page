@@ -1,36 +1,39 @@
 # Allergy Scheduler
 
-<img src="assets/allergy_scheduler_logo_large_in_circle_1024x1024.jpg" width="200" />
+A production-ready Flutter and Firebase application for meticulous tracking of allergen administration and dosage history.
 
-An application to help users track and manage allergy-related appointments and schedules.
+## 🚀 Overview
 
-## 🚀 Features
+Allergy Scheduler is designed for patients on active medical protocols who need to track precise dosages, health status, and reactions in real-time. It provides healthcare providers and patients with a unified view of historical data through denormalized tables and professionally generated PDF reports.
 
-- User Authentication (Email/Password & Google Sign-In)
-- Patient Management (Profiles, History)
-- **Dose Tracking**: Detailed log of medication administration.
-- **Dosage Summaries**: Aggregated view of treatment history with PDF Export support.
-- **Protocols**: Management of medical protocols and allergens.
-- **Doctor Integration**: Manage contact info for medical professionals.
-- **Customizable**: Themes, Languages, and Notification settings.
+### ✨ Key Features
 
-<img src="assets/2.png" width="300" />
+- **Real-time Tracking**: Log doses with health, medication, and reaction statuses.
+- **Sequential Worker Queue**: High-consistency backend processing for dosage groups and statistics.
+- **Smart Analytics**: Aggregated usage statistics (yearly, monthly, daily) with interactive charts.
+- **Automated Scheduling**: end-of-day "Day Off" dose creation and smart countdown notifications for next allowed dose.
+- **Multi-user Access**: RBAC membership system allowing doctors and caregivers to view patient data.
+- **Premium Reporting**: Professional PDF exports for dosage history and usage stats (M3 Design).
+- **Cross-Platform**: Full support for Android, iOS, macOS, Windows, and Web.
 
-## 📚 Documentation
+### 🛠️ Tech Stack
 
-The project documentation is organized into specific guides for different audiences:
-
-| Document                                | Audience       | Description                                                                                           |
-| :-------------------------------------- | :------------- | :---------------------------------------------------------------------------------------------------- |
-| [**📖 USER_MANUAL.md**](USER_MANUAL.md) | **End Users**  | Guide on how to use the application features and settings.                                            |
-| [**🤖 AGENTS.md**](AGENTS.md)           | **AI Agents**  | "Memory" file. Contains Architectural decisions, Project Structure, and detailed component breakdown. |
-| [**💻 DEVELOPMENT.md**](DEVELOPMENT.md) | **Developers** | **Start Here**. Setup instructions, build commands (`build_runner`, `l10n`), and workflow guidelines. |
-
-## 📂 Project Structure
-
-- `frontend/`: Flutter mobile application.
-- `backend/`: Firebase Cloud Functions (TypeScript). Uses Local Emulator Suite for development.
+- **Frontend**: Flutter (Provider, Equatable, json_serializable)
+- **Backend**: Firebase Cloud Functions (TypeScript), Firestore, FCM, Auth
+- **Infrastructure**: Firebase Local Emulator Suite for local development
+- **Subscription**: RevenueCat for multi-platform premium entitlement management
+- **CI/CD**: GitHub Actions for automated testing, deployment, and project management
 
 ---
 
-_Generated with the help of Gemini._
+## 📚 Documentation
+
+The project's documentation is divided into specialized files to ensure clear boundaries and ease of use:
+
+- 🪄 **[SETUP.md](SETUP.md)**: Local environment setup, operational commands, and troubleshooting for developers.
+- ⚙️ **[DEVELOPMENT.md](DEVELOPMENT.md)**: The technical source of truth. Details on architecture, design patterns, folder structure, and technical guidelines.
+- 👁️ **[AGENTS.md](AGENTS.md)**: AI agent-specific memory, behavioral rules, and major architectural decisions.
+- 📖 **[USER_MANUAL.md](USER_MANUAL.md)**: End-user guide for patients and staff. Features, subscription tiers, and app flows.
+
+---
+*Maintained by the Allergy Scheduler Team.*
