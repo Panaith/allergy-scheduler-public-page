@@ -41,7 +41,10 @@ Allergy Scheduler offers three tiers to suit your needs. You can upgrade at any 
 
 ## 3. Managing Patients
 
-The app allows you to manage one or more patients, each with their own treatment schedules and information.
+The app allows you to manage one or more patients, each with their own treatment schedules and information. 
+
+> [!TIP]
+> **Landing Page**: When you start the app, if you have already created or joined patients but haven't selected one yet, you will land on the **Home** page. From there, you can easily select the patient you want to work with. If you have no patients yet, the app will guide you to the **Patient Settings** to add your first one.
 
 ### Creating or Joining a Patient
 
@@ -68,6 +71,7 @@ If you are a patient administrator, you can manage who else has access to the pa
 The **Doses** tab is where you can log and view individual medication doses.
 
 - **Adding a dose:** Tap the **+** button to add a new dose. You'll be asked to enter the dosage amount, the time it was administered, and any relevant notes.
+  - **Dosage Placeholder**: The dosage field will show a placeholder with the value of the previous dose as a reference.
 - **Viewing dose history:** The Doses screen displays a list of all past doses. You can filter this list by date, dosage amount, medical status, protocol, or use text search to find specific entries.
   - _Note on Filtering:_ To ensure search results are always fast and reliable, you can choose to filter by **either** Text Search, Date, **or** Dosage Range at one time. Applying a new filter of these types will replace the previous one. Special statuses (Health, Medication, Reaction) can also be filtered one at a time.
 - **Editing or deleting a dose:** You can swipe left on a dose to edit or delete it.
