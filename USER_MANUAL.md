@@ -8,13 +8,13 @@ Welcome to Allergy Scheduler! This guide will help you get started and make the 
 
 Securely access your data using your **Email & Password** or **Google Sign-In**.
 
-<img src="assets/1.png" width="300" />
+<img src="assets/Sign%20in%20page.png" width="300" /> <img src="assets/Sign%20up%20page.png" width="300" />
 
 ### 2. User Profile
 
 Manage your account details and view your unique User ID.
 
-<img src="assets/16.png" width="300" />
+<img src="assets/profile%20settings%20page.png" width="300" />
 
 ### Logging In
 
@@ -37,7 +37,7 @@ Allergy Scheduler offers three tiers to suit your needs. You can upgrade at any 
 
 - **Premium**: Unlocks advanced features like **Unlimited Patients**, **PDF Export** for reports, and extended history.
 
-<img src="assets/15_1.png" width="300" /> <img src="assets/22.png" width="300" />
+<img src="assets/user%20settings%20page.png" width="300" /> <img src="assets/profile%20settings%20page.png" width="300" />
 
 ## 3. Managing Patients
 
@@ -62,33 +62,35 @@ If you are a patient administrator, you can manage who else has access to the pa
 2.  **Invite by Email**: Tap the **+** button in the "Members" section, enter the user's email address, and tap **Invite**. Note: The user must already be registered with this email. They will receive a notification to join.
 3.  **Manage Requests**: Any pending "Join Requests" will appear at the top of the Patient Settings page. You can **Accept** or **Decline** them here.
 4.  **Copy Patient ID**: To let someone request access, tap the **Copy** icon next to the Patient ID to copy it to your clipboard and send it to them.
-5.  **Remove/Promote Members**: You can remove existing members or promote them to administrators.
+5.  **Remove/Promote Members**: Administrators can remove existing members or promote them to administrators.
+6.  **Leaving a Patient**: If you are not an administrator, you can choose to **Leave** a patient group at any time from the Patient Settings page. This will remove your access to that patient's data.
 
 - **Deleting a Patient**: Remove a patient profile from your account. This action is permanent and only available to administrators.
+- **Manual Data Rebuild (Admin Only)**: If you notice discrepancies in your dosage groups or statistics (e.g., "ghost" records), administrators can trigger a **Rebuild All Tables** operation from the Patient Settings page. This will reconstruct all summary tables from your raw dose history to ensure data integrity.
+- **Background Synchronization**: When you are working with a patient, you might occasionally see a small "Syncing..." indicator at the bottom of the screen. This means the app is updating your local data with the latest changes from the cloud to ensure everything is perfectly in sync.
+
+<img src="assets/patient%20settings%20page.png" width="300" /> <img src="assets/patient%20form.png" width="300" /> <img src="assets/invite%20member%20form.png" width="300" />
 
 ## 4. Tracking Doses
 
 The **Doses** tab is where you can log and view individual medication doses.
 
 - **Adding a dose:** Tap the **+** button to add a new dose. You'll be asked to enter the dosage amount, the time it was administered, and any relevant notes.
-  - **Dosage Placeholder**: The dosage field will show a placeholder with the value of the previous dose as a reference.
+  - **Smart Dosage Suggestions**: The dosage field provides a dropdown with suggestions based on your history. The **Previous Dosage** (last used) is always at the top, followed by other **Recent History** values. You can either select a suggestion or type a custom numeric value.
 - **Viewing dose history:** The Doses screen displays a list of all past doses. You can filter this list by date, dosage amount, medical status, protocol, or use text search to find specific entries.
   - _Note on Filtering:_ To ensure search results are always fast and reliable, you can choose to filter by **either** Text Search, Date, **or** Dosage Range at one time. Applying a new filter of these types will replace the previous one. Special statuses (Health, Medication, Reaction) can also be filtered one at a time.
-- **Editing or deleting a dose:** You can swipe left on a dose to edit or delete it.
+- **Editing or deleting a dose:** You can use the **More Options** (three-dot) menu on any dose card, or swipe left/right for a quick shortcut.
 - **Validations:** The app will warn you if you try to add a dose with a future date or if the time interval between doses is too short, but you can choose to proceed if necessary.
 - **Special Statuses:**
   - **Day Off:** Marking a dose as a "Day Off" prevents adding any other doses for that day. It allows you to log a planned break in treatment.
   - **Seriously Ill:** Use this when the patient is too ill for the full protocol. Unlike "Day Off", you can still add other doses on the same day if the condition improves or changes. This status does not check for time intervals between doses.
 
-<img src="assets/2.png" width="300" /> <img src="assets/3.png" width="300" /> <img src="assets/4.png" width="300" />
+<img src="assets/home%20page.png" width="300" /> <img src="assets/home%20page%20with%20countdown.png" width="300" /> <img src="assets/doses%20page.png" width="300" /> <img src="assets/dose%20form.png" width="300" />
 
-### Info and Warnings
-
-The app automatically analyzes your dose history and may display warnings at the top of the Home screen if it detects issues, such as:
-
-- Too many consecutive days with "Day Off" or "Seriously Ill" status.
-- Days with insufficient doses (where you might need to repeat the day).
 - Specific warnings based on health or medication status (e.g., Antibiotics use).
+
+> [!IMPORTANT]
+> **Medical Disclaimer**: Allergy Scheduler is a tracking tool and DOES NOT provide medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition. Never disregard professional medical advice or delay in seeking it because of something you have read on this application.
 
 ## 5. Dosage Summaries
 
@@ -97,7 +99,7 @@ The **Dosage Groups** tab provides a summary of all doses, grouped by dosage amo
 - **Filtering**: Similar to individual doses, you can dynamically filter dosage groups by combining date ranges, dosage amounts, and mutually-exclusive specific statuses.
 - **Exporting to PDF (Premium)**: You can generate a detailed report of your dosage history by tapping the **Export to PDF** button. This will open a dedicated **PDF Preview** page where the report is generated in real-time. You'll see a clear loading progress, and once ready, the report is displayed using an **Elite PDF Viewer** (powered by pdfrx) with multi-touch zoom and smooth navigation. From there, you can easily **save** to your device, **share** via other apps, or **print** the report. This feature requires a **Premium** subscription.
 
-<img src="assets/7.png" width="300" /> <img src="assets/9.png" width="300" />
+<img src="assets/dosage%20groups%20page.png" width="300" />
 
 ## 6. Usage Statistics
 
@@ -110,24 +112,29 @@ The **Usage Statistics** tab provides a detailed breakdown of your treatment his
 - **Filtering:** You can filter the statistics to show data for all time, a specific year, or a specific month using the dropdown menus at the top of the page.
 - **Monthly History:** A bar chart displaying the number of doses administered each month. If a year is selected, it shows the months of that year.
 
-<img src="assets/12.png" width="300" /> <img src="assets/14.png" width="300" />
+<img src="assets/usage%20statistics%20page.png" width="300" />
 
-## 7. Managing Protocols
+### 7. Managing Protocols
 
-The **Protocols** tab allows you to set up and manage treatment protocols.
+The **Protocols** tab allows you to set up and manage treatment protocols. **Note: Management of protocols (Add, Edit, Delete) is only available to patient administrators.**
 
 - **Creating a protocol:** You can create a new protocol by specifying a name, dosage, and frequency.
-- **Managing Allergens**: Define specific allergens for each protocol.
+- **Editing or deleting a protocol:** Administrators can use the **More Options** menu on any protocol card, or swipe to edit/delete.
+- **Rules Configuration**: Customize how the app handles intervals and warnings when this protocol is active. You can set the default interval between doses, customize intervals for when an antihistamine is used, set the minimum number of doses required for a "valid day", and toggle specific warnings on or off. By default, these use the system standard values, but you can override them to match your doctor's specific instructions.
+- **Managing Allergens & Blends**: Define specific allergens or blends for each protocol to accurately track what medication components the patient is receiving.
 
-<img src="assets/10.png" width="300" /> <img src="assets/11.png" width="300" />
+<img src="assets/protocols%20page.png" width="300" /> <img src="assets/protocol%20form.png" width="300" /> <img src="assets/protocol%20rules.png" width="300" />
 
 - **Viewing protocols:** The Protocols screen lists all your saved protocols, giving you a quick overview of your treatment plans.
 - **Filtering:** You can filter protocols by date, name, or use text search to find specific entries.
 
 ## 8. Doctor Information
 
-- **Doctor Settings:** In the **Doctor** tab, you can save and update your doctor's contact information for easy access.
+- **Doctor Settings**: In the **Doctor** tab, you can save and update your doctor's contact information for easy access. **Note: Management of doctor information (Add, Edit, Delete) is only available to patient administrators.** Use the **More Options** menu on any doctor card or swipe to manage entries.
 - **Contact Information**: Save phone numbers (with quick dial), emails, and addresses.
+- **Data Usage Note**: The information you enter here is stored securely and is used solely to facilitate your ability to quickly contact your physician from within the app.
+
+<img src="assets/doctor%20settings%20page.png" width="300" />
 
 ## 9. App Settings
 
@@ -137,12 +144,28 @@ The **Settings** tab allows you to customize the app to your preferences.
 - **Theme:** Switch between light and dark mode.
 - **Theme Color:** Choose a custom seed color for the application theme.
 - **Material Version:** Toggle between Material 2 and Material 3 design systems.
-- **Language:** Change the app's display language.
+- **Language:** Change the app's display language. Allergy Scheduler currently supports:
+    - English
+    - Greek
+    - Spanish
+    - French
+    - German
+    - Italian
+    - Portuguese (Brazilian)
+    - Arabic (Right-to-Left support)
+    - Chinese (Simplified)
+    - Japanese
+    - Hindi
+    - Turkish
 - **Notification Devices:** Manage the devices currently registered to receive notifications. You can see your current device and remove old devices you no longer use.
+- **Information & Legal**:
+    - **Medical Disclaimer**: Access the full medical disclaimer from the **Info & Contact** page.
+    - **Privacy Policy**: Review our privacy policy to understand how we protect your information.
+    - **Delete Account**: You can permanently delete your account and all associated data from the **Profile Settings** page. This will remove your personal settings and any patient profiles where you are the only member. Note: If you are an administrator of a patient with other members, you must transfer admin rights or remove other members before the patient profile is automatically deleted.
 
 > **Note:** Your settings for **Date & Time Format** and **Language** will also be used when generating PDF reports to ensure they are consistent with your preferences.
 
-<img src="assets/17.png" width="300" />
+<img src="assets/info%20and%20contact%20page.png" width="300" />
 
 ## 10. Troubleshooting
 
