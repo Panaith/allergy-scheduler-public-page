@@ -1,176 +1,209 @@
-# Allergy Scheduler User Manual
+# Allergy Scheduler — User Manual
 
-Welcome to Allergy Scheduler! This guide will help you get started and make the most of the app's features to manage your allergy treatment schedule.
-
-## 1. Getting Started
-
-### 1. Authentication
-
-Securely access your data using your **Email & Password** or **Google Sign-In**.
-
-<img src="assets/Sign%20in%20page.png" width="300" /> <img src="assets/Sign%20up%20page.png" width="300" />
-
-### 2. User Profile
-
-Manage your account details and view your unique User ID.
-
-<img src="assets/profile%20settings%20page.png" width="300" />
-
-### Logging In
-
-- **Log in:** Once you have an account, you can log in using the same method you used to sign up.
-
-## 2. Subscription Plans
-
-Allergy Scheduler offers three tiers to suit your needs. You can upgrade at any time through the Profile menu.
-
-### 💎 Summary of Subscription Tiers
-
-| Feature                    | Free      | Plus      | Premium |
-| :------------------------- | :-------- | :-------- | :------ |
-| **Basic Tracking**         | ✅ Open   | ✅ Open   | ✅ Open |
-| **Info & Warnings**        | 🔒 Locked | ✅ Open   | ✅ Open |
-| **Dosage Groups**          | 🔒 Locked | ✅ Open   | ✅ Open |
-| **Usage Statistics**       | 🔒 Locked | 🔒 Locked | ✅ Open |
-| **Settings Customization** | 🔒 Locked | 🔒 Locked | ✅ Open |
-| **PDF Export**             | 🔒 Locked | 🔒 Locked | ✅ Open |
-
-- **Premium**: Unlocks advanced features like **Unlimited Patients**, **PDF Export** for reports, and extended history.
-
-<img src="assets/user%20settings%20page.png" width="300" /> <img src="assets/profile%20settings%20page.png" width="300" />
-
-## 3. Managing Patients
-
-The app allows you to manage one or more patients, each with their own treatment schedules and information. 
-
-> [!TIP]
-> **Landing Page**: When you start the app, if you have already created or joined patients but haven't selected one yet, you will land on the **Home** page. From there, you can easily select the patient you want to work with. If you have no patients yet, the app will guide you to the **Patient Settings** to add your first one.
-
-### Creating or Joining a Patient
-
-1.  From the main screen, tap on the **Add Patient** button.
-2.  You can then choose between two options:
-    - **Create New Patient**: Fill in the patient's details (name, date of birth, allergens, and **Timezone**) and tap **Save**.
-    - **Request to Join a Patient**: Enter the 20-character **Patient ID** (shared with you by the admin) and your name. Tap **Join** to send a request.
-3.  The patient admin will receive a notification and can accept or decline your request from their **Patient Settings**.
-
-### Managing Members & Invitations
-
-If you are a patient administrator, you can manage who else has access to the patient's data.
-
-1.  Go to the **Patient Settings** tab.
-2.  **Invite by Email**: Tap the **+** button in the "Members" section, enter the user's email address, and tap **Invite**. Note: The user must already be registered with this email. They will receive a notification to join.
-3.  **Manage Requests**: Any pending "Join Requests" will appear at the top of the Patient Settings page. You can **Accept** or **Decline** them here.
-4.  **Copy Patient ID**: To let someone request access, tap the **Copy** icon next to the Patient ID to copy it to your clipboard and send it to them.
-5.  **Remove/Promote Members**: Administrators can remove existing members or promote them to administrators.
-6.  **Leaving a Patient**: If you are not an administrator, you can choose to **Leave** a patient group at any time from the Patient Settings page. This will remove your access to that patient's data.
-
-- **Deleting a Patient**: Remove a patient profile from your account. This action is permanent and only available to administrators.
-- **Manual Data Rebuild (Admin Only)**: If you notice discrepancies in your dosage groups or statistics (e.g., "ghost" records), administrators can trigger a **Rebuild All Tables** operation from the Patient Settings page. This will reconstruct all summary tables from your raw dose history to ensure data integrity.
-- **Background Synchronization**: When you are working with a patient, you might occasionally see a small "Syncing..." indicator at the bottom of the screen. This means the app is updating your local data with the latest changes from the cloud to ensure everything is perfectly in sync.
-
-<img src="assets/patient%20settings%20page.png" width="300" /> <img src="assets/patient%20form.png" width="300" /> <img src="assets/invite%20member%20form.png" width="300" />
-
-## 4. Tracking Doses
-
-The **Doses** tab is where you can log and view individual medication doses.
-
-- **Adding a dose:** Tap the **+** button to add a new dose. You'll be asked to enter the dosage amount, the time it was administered, and any relevant notes.
-  - **Smart Dosage Suggestions**: The dosage field provides a dropdown with suggestions based on your history. The **Previous Dosage** (last used) is always at the top, followed by other **Recent History** values. You can either select a suggestion or type a custom numeric value.
-- **Viewing dose history:** The Doses screen displays a list of all past doses. You can filter this list by date, dosage amount, medical status, protocol, or use text search to find specific entries.
-  - _Note on Filtering:_ To ensure search results are always fast and reliable, you can choose to filter by **either** Text Search, Date, **or** Dosage Range at one time. Applying a new filter of these types will replace the previous one. Special statuses (Health, Medication, Reaction) can also be filtered one at a time.
-- **Editing or deleting a dose:** You can use the **More Options** (three-dot) menu on any dose card, or swipe left/right for a quick shortcut.
-- **Validations:** The app will warn you if you try to add a dose with a future date or if the time interval between doses is too short, but you can choose to proceed if necessary.
-- **Special Statuses:**
-  - **Day Off:** Marking a dose as a "Day Off" prevents adding any other doses for that day. It allows you to log a planned break in treatment.
-  - **Seriously Ill:** Use this when the patient is too ill for the full protocol. Unlike "Day Off", you can still add other doses on the same day if the condition improves or changes. This status does not check for time intervals between doses.
-
-<img src="assets/home%20page.png" width="300" /> <img src="assets/home%20page%20with%20countdown.png" width="300" /> <img src="assets/doses%20page.png" width="300" /> <img src="assets/dose%20form.png" width="300" />
-
-- Specific warnings based on health or medication status (e.g., Antibiotics use).
-
-> [!IMPORTANT]
-> **Medical Disclaimer**: Allergy Scheduler is a tracking tool and DOES NOT provide medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition. Never disregard professional medical advice or delay in seeking it because of something you have read on this application.
-
-## 5. Dosage Summaries
-
-The **Dosage Groups** tab provides a summary of all doses, grouped by dosage amount. This makes it easy to see how often each dosage has been administered.
-
-- **Filtering**: Similar to individual doses, you can dynamically filter dosage groups by combining date ranges, dosage amounts, and mutually-exclusive specific statuses.
-- **Exporting to PDF (Premium)**: You can generate a detailed report of your dosage history by tapping the **Export to PDF** button. This will open a dedicated **PDF Preview** page where the report is generated in real-time. You'll see a clear loading progress, and once ready, the report is displayed using an **Elite PDF Viewer** (powered by pdfrx) with multi-touch zoom and smooth navigation. From there, you can easily **save** to your device, **share** via other apps, or **print** the report. This feature requires a **Premium** subscription.
-
-<img src="assets/dosage%20groups%20page.png" width="300" />
-
-## 6. Usage Statistics
-
-The **Usage Statistics** tab provides a detailed breakdown of your treatment history.
-
-- **Overview:** View key metrics like Total Doses, Mean Doses per Day, and Highest Doses in a single day.
-- **Patient Selection:** Easily switch between patients using the selector at the top.
-- **Health Statuses:** Features a visual pie chart showing the distribution of all health statuses (Healthy, Slightly Ill, Seriously Ill, Day Off) across all doses, along with total counts for each status.
-- **Detailed Breakdowns:** Separate cards show the total counts for each Medication Status and Reaction Status encountered during treatment.
-- **Filtering:** You can filter the statistics to show data for all time, a specific year, or a specific month using the dropdown menus at the top of the page.
-- **Monthly History:** A bar chart displaying the number of doses administered each month. If a year is selected, it shows the months of that year.
-
-<img src="assets/usage%20statistics%20page.png" width="300" />
-
-### 7. Managing Protocols
-
-The **Protocols** tab allows you to set up and manage treatment protocols. **Note: Management of protocols (Add, Edit, Delete) is only available to patient administrators.**
-
-- **Creating a protocol:** You can create a new protocol by specifying a name, dosage, and frequency.
-- **Editing or deleting a protocol:** Administrators can use the **More Options** menu on any protocol card, or swipe to edit/delete.
-- **Rules Configuration**: Customize how the app handles intervals and warnings when this protocol is active. You can set the default interval between doses, customize intervals for when an antihistamine is used, set the minimum number of doses required for a "valid day", and toggle specific warnings on or off. By default, these use the system standard values, but you can override them to match your doctor's specific instructions.
-- **Managing Allergens & Blends**: Define specific allergens or blends for each protocol to accurately track what medication components the patient is receiving.
-
-<img src="assets/protocols%20page.png" width="300" /> <img src="assets/protocol%20form.png" width="300" /> <img src="assets/protocol%20rules.png" width="300" />
-
-- **Viewing protocols:** The Protocols screen lists all your saved protocols, giving you a quick overview of your treatment plans.
-- **Filtering:** You can filter protocols by date, name, or use text search to find specific entries.
-
-## 8. Doctor Information
-
-- **Doctor Settings**: In the **Doctor** tab, you can save and update your doctor's contact information for easy access. **Note: Management of doctor information (Add, Edit, Delete) is only available to patient administrators.** Use the **More Options** menu on any doctor card or swipe to manage entries.
-- **Contact Information**: Save phone numbers (with quick dial), emails, and addresses.
-- **Data Usage Note**: The information you enter here is stored securely and is used solely to facilitate your ability to quickly contact your physician from within the app.
-
-<img src="assets/doctor%20settings%20page.png" width="300" />
-
-## 9. App Settings
-
-The **Settings** tab allows you to customize the app to your preferences.
-
-- **Date & Time Format:** Choose how dates and times are displayed throughout the app.
-- **Theme:** Switch between light and dark mode.
-- **Theme Color:** Choose a custom seed color for the application theme.
-- **Material Version:** Toggle between Material 2 and Material 3 design systems.
-- **Language:** Change the app's display language. Allergy Scheduler currently supports:
-    - English
-    - Greek
-    - Spanish
-    - French
-    - German
-    - Italian
-    - Portuguese (Brazilian)
-    - Arabic (Right-to-Left support)
-    - Chinese (Simplified)
-    - Japanese
-    - Hindi
-    - Turkish
-- **Notification Devices:** Manage the devices currently registered to receive notifications. You can see your current device and remove old devices you no longer use.
-- **Information & Legal**:
-    - **Medical Disclaimer**: Access the full medical disclaimer from the **Info & Contact** page.
-    - **Privacy Policy**: Review our privacy policy to understand how we protect your information.
-    - **Delete Account**: You can permanently delete your account and all associated data from the **Profile Settings** page. This will remove your personal settings and any patient profiles where you are the only member. Note: If you are an administrator of a patient with other members, you must transfer admin rights or remove other members before the patient profile is automatically deleted.
-
-> **Note:** Your settings for **Date & Time Format** and **Language** will also be used when generating PDF reports to ensure they are consistent with your preferences.
-
-<img src="assets/info%20and%20contact%20page.png" width="300" />
-
-## 10. Troubleshooting
-
-- **App refused to load due to Version Mismatch**: Allergy Scheduler enforces strict synchronization between the app version and the cloud server to prevent data corruption. If you see a screen asking you to "Update your app" or "Update backend", it means your app is out of date. If you need to update the app, you will see an "Open Google Play" button that takes you directly to the store. Otherwise, please visit the App Store / Google Play Store to download the latest version, or hard-refresh/clear your browser cache if you are using the Web version.
+> **Medical Disclaimer**: Allergy Scheduler is a **tracking tool only**. It does not provide medical advice, diagnosis, or treatment. Always consult your physician regarding your treatment plan.
 
 ---
 
-_This user manual was generated with the help of Gemini._
+# Authentication
+
+## Sign in
+
+Open the app and sign in with your **Email & Password** or **Google Sign-In**.
+
+If you don't have an account yet, tap **Register**:
+- Enter a valid email address and a password (minimum 6 characters).
+- Confirm the password by typing it a second time.
+- Tap the **eye** icon on any password field to show or hide the characters.
+
+The app validates your input automatically and shows specific error messages if something is wrong (e.g. email already in use, weak password).
+
+## Sign out
+
+Tap the **Profile** icon (top-right corner) → **Sign Out**.
+
+---
+
+# Usage
+
+## Patient Settings
+
+A **Patient** is the person whose allergy treatment you are tracking. You can create a patient profile (becoming the owner/admin) or join one managed by someone else.
+
+**Create a patient**
+1. Profile menu → **Patient Settings** → **Add** → **Create Patient**.
+2. Fill in the name, date of birth, timezone, and allergen details.
+3. Tap **Save**.
+
+**Join an existing patient**
+1. Ask the patient's admin for their **Patient ID** (20-character code).
+2. Profile menu → **Patient Settings** → **Add** → **Join Patient**.
+3. Enter the Patient ID and tap **Join**. The admin receives a notification and can accept or decline.
+
+**Manage members (admin only)**
+- **Invite**: Tap **+** in the Members section, enter the user's registered email, and tap **Invite**.
+- **Accept / Decline requests**: Pending join requests appear at the top of the Patient Settings page.
+- **Share Patient ID**: Tap the **Copy** icon next to the Patient ID to copy it to your clipboard.
+- **Remove or promote**: Use the **⋯** menu on any member row to remove them or change their role.
+
+**Leave a patient**
+Non-admin members can leave a patient group at any time via the **Leave** option on the Patient Settings page.
+
+**Delete a patient (admin only)**
+Use the **Delete** option on the Patient Settings page. This is permanent and removes all data for that patient.
+
+> A small **"Syncing…"** indicator at the bottom of the screen means the app is updating your data in the background — this is normal.
+
+## Protocols page
+
+A **Protocol** defines the treatment plan: the allergen blend and the rules that govern how doses are tracked. Only the patient admin can create, edit, or delete protocols.
+
+- **Add**: Tap **+**, give the protocol a name, then add allergen substances to build the **Blend**.
+- **Edit / Delete**: Swipe a protocol card left or right, or use the **⋯** menu.
+- **Blend**: Add **Base** and **Allergen** substances that make up the mixture.
+- **Rules (Premium)**: Customise dose intervals, countdown notification timings (Relax / Go Play / Ready), and which warnings are shown. By default the app uses standard values — override them to match your doctor's specific plan.
+- **Filter / Search**: Use the search bar and filter controls at the top of the page.
+
+## Doses Page
+
+The **Doses** tab is where you log every dose administered.
+
+- **Add a dose**: Tap **+**. Select the protocol, enter the dosage amount, set the date and time, then choose the health, medication, and reaction status.
+  - **Smart suggestions**: The dosage field shows your last used amount at the top, followed by up to five values from your recent history. You can also type a custom value.
+- **Edit / Delete**: Swipe a dose card left or right, or use the **⋯** menu.
+- **Filter**: Filter by date range, dosage amount, health / medication / reaction status, or free-text search.
+- **Validations**: The app warns you if a dose is set in the future or if the time since the last dose is shorter than the protocol's minimum interval. You can still save the dose if you choose to proceed.
+
+**Special dose statuses**
+
+| Status | What it means |
+| :--- | :--- |
+| **Day Off** | A planned break. No other doses can be added that day. |
+| **Seriously Ill** | Patient is too unwell for the full protocol. Other doses can still be added the same day; time-interval checks are skipped. |
+
+## Home page
+
+The **Home** page shows the current treatment status at a glance.
+
+- **Countdown timer**: Displays how long until the next dose is due, based on the last dose and the active protocol's intervals.
+- **Patient selector**: Switch between patients using the selector at the top of the page.
+- **Info & Warnings (Plus / Premium)**: Contextual alerts based on the patient's current status — for example, a reminder when an antihistamine is active, when antibiotics are being used, or when the previous day had too few doses.
+
+## Dosage Groups page
+
+The **Dosage Groups** tab summarises your dose history grouped by dosage amount, so you can quickly see how often each amount has been used.
+
+- **Filter**: Combine date ranges, dosage amounts, and status filters to narrow down the view.
+- **Export to PDF (Premium)**: Tap the export button to generate a printable report. The report can be previewed in-app, then saved to your device, shared, or printed.
+
+## Statistics page
+
+The **Statistics** tab (Premium) provides a detailed overview of the full treatment history.
+
+- **Key metrics**: Total doses, mean doses per day, and highest single-day dose count.
+- **Health breakdown**: A pie chart showing the distribution of health statuses (Healthy, Slightly Ill, Seriously Ill, Day Off).
+- **Medication & Reaction counts**: Summaries for each medication and reaction status recorded.
+- **Monthly bar chart**: Dose count per month, filterable by year.
+- **Filter**: Use the dropdowns at the top to view all-time, yearly, or monthly data.
+
+---
+
+# Personal Settings
+
+## Profile Settings page
+
+Access via the **Profile** icon (top-right corner).
+
+- View and edit your **display name** and **email address**.
+- View your unique **User ID**.
+- Tap **Manage Subscription** to open the Subscriptions page.
+
+## User Settings page
+
+Access via the **Profile menu → User Settings** (Premium).
+
+- **Date & Time Format**: Choose how dates and times are displayed across the app and in PDF exports.
+- **Theme**: Switch between Light and Dark mode.
+- **Theme Color**: Pick a custom accent color for the app.
+- **Language**: Choose from 13 supported languages — English, Greek, Spanish, French, German, Italian, Portuguese, Portuguese (BR), Arabic, Chinese (Simplified), Japanese, Hindi, Turkish.
+- **Notification Devices**: View and remove devices that are registered to receive push notifications.
+- **App Guide**: Toggle the step-by-step welcome guide on or off. When enabled, the guide appears automatically on first login. You can replay it at any time from the **Info & Contact** page.
+
+## Doctor Settings page
+
+Access via **Patient Settings → Doctor** section (admin only).
+
+Save your doctor's contact details for quick access from within the app:
+- **Phone** — tap to dial directly.
+- **Email** and **Address**.
+
+Only the patient admin can add, edit, or delete doctor entries. Use the **⋯** menu or swipe to manage them.
+
+> This information is stored solely for your convenience and is not shared with any third party.
+
+## Info & Contact page
+
+Access via the **Profile menu → Info & Contact**.
+
+- **User Guide** — Opens the built-in step-by-step guide to the core app workflow.
+- **User Manual** — Opens this document.
+- **Medical Disclaimer** — Review the full disclaimer.
+- **Privacy Policy** — Review how your data is handled.
+- App version and support contact details.
+
+## Delete user
+
+Permanently delete your account from **Profile Settings → Delete Account**.
+
+This removes:
+- Your personal settings and preferences.
+- Any patient profiles where you are the **sole member / admin**.
+
+> If you are the admin of a patient that has other members, you must either **transfer admin rights** to another member or **remove all other members** before your account can be fully deleted.
+
+---
+
+# Subscriptions
+
+## Subscription plans/tiers
+
+Allergy Scheduler offers three tiers:
+
+| Feature | Free | Plus | Premium |
+| :--- | :---: | :---: | :---: |
+| Basic dose tracking | ✅ | ✅ | ✅ |
+| Info & Warnings | 🔒 | ✅ | ✅ |
+| Dosage Groups | 🔒 | ✅ | ✅ |
+| Usage Statistics | 🔒 | 🔒 | ✅ |
+| User Settings (theme, language…) | 🔒 | 🔒 | ✅ |
+| Protocol Rules | 🔒 | 🔒 | ✅ |
+| PDF Export | 🔒 | 🔒 | ✅ |
+
+**Free trial**: New users who have never subscribed receive a **1-month free Premium trial** automatically — no action required.
+
+## Subscriptions page
+
+Access via the **Profile menu → Manage Subscription** or by tapping any locked feature.
+
+- View your current plan and renewal status.
+- Upgrade to **Plus** or **Premium** (monthly or yearly billing).
+- Eligible packages show a **free trial badge** and a "Then €X/mo" subtitle.
+- Manage or cancel your subscription through the store (Google Play / App Store / Web Billing).
+
+---
+
+# Troubleshooting
+
+**App shows "Version Mismatch" and won't open**
+The app enforces version synchronisation with the cloud to prevent data corruption. Tap **Open Google Play** (or visit the App Store / hard-refresh your browser) to update to the latest version.
+
+**Data looks out of sync or "ghost" records appear in Dosage Groups**
+Patient admins can trigger a full data rebuild: go to **Patient Settings → Rebuild All Tables**. This reconstructs all summaries from your raw dose history.
+
+**Countdown timer or notifications seem wrong**
+Verify that the correct **Protocol** is linked to the latest dose, and check that the protocol's **Rules** match your doctor's prescribed intervals.
+
+**"Interval too short" warning when adding a dose**
+The app enforces the minimum dose interval defined in the active protocol. You can still save the dose by confirming the override when prompted.
+
+**Push notifications not arriving**
+Go to **User Settings → Notification Devices** and confirm your device is listed. Also check that the app has notification permission in your device's system settings.

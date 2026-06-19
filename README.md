@@ -19,10 +19,10 @@ Allergy Scheduler is designed for patients on active medical protocols who need 
 ## 📱 Screenshots
 
 <p align="center">
-  <img src="assets/home%20page.png" width="23%" />
-  <img src="assets/home%20page%20with%20countdown.png" width="23%" />
-  <img src="assets/doses%20page.png" width="23%" />
-  <img src="assets/usage%20statistics%20page.png" width="23%" />
+  <img src="assets/home_page.png" width="23%" />
+  <img src="assets/home_page_with_countdown.png" width="23%" />
+  <img src="assets/doses_page.png" width="23%" />
+  <img src="assets/usage_statistics_page.png" width="23%" />
 </p>
 
 ### 🛠️ Tech Stack
