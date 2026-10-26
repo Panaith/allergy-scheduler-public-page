@@ -45,8 +45,11 @@ A **Patient** is the person whose allergy treatment you are tracking. You can cr
 - **Share Patient ID**: Tap the **Copy** icon next to the Patient ID to copy it to your clipboard.
 - **Remove or promote**: Use the **⋯** menu on any member row to remove them or change their role.
 
+**Transfer ownership (owner only)**
+The patient's owner (marked with a badge) can hand ownership to another member: **⋯** menu on that member's row → **Transfer Ownership**. The new owner also becomes an admin. Only the current owner can do this — being an admin is not enough — and the person must already be a member.
+
 **Leave a patient**
-Non-admin members can leave a patient group at any time via the **Leave** option on the Patient Settings page.
+Any member except the owner can leave a patient group at any time: open the **⋯** menu on **your own** row in the Members section and choose **Leave Patient**. You immediately lose access to that patient's data. If you are the owner, transfer ownership first; if you are the only remaining admin, the option is disabled so the group is never left unmanaged.
 
 **Delete a patient (admin only)**
 Use the **Delete** option on the Patient Settings page. This is permanent and removes all data for that patient.
@@ -61,7 +64,7 @@ A **Protocol** defines the treatment plan: the allergen blend and the rules that
 - **Edit / Delete**: Swipe a protocol card left or right, or use the **⋯** menu.
 - **Blend**: Add **Base** and **Allergen** substances that make up the mixture.
 - **Rules (Premium)**: Customise dose intervals, countdown notification timings (Relax / Go Play / Ready), and which warnings are shown. By default the app uses standard values — override them to match your doctor's specific plan.
-- **Filter / Search**: Use the search bar and filter controls at the top of the page.
+- **Filter / Search**: Use the search bar and filter controls at the top of the page. Search is case-insensitive and matches the beginning of any word in a protocol's **name**, **substance**, or **comment** — so typing `pea` finds "Peanut Mix", and you can also type the start of a multi-word name (`peanut m`). Search can be combined with the date filter.
 
 ## Doses Page
 
@@ -154,6 +157,8 @@ Access via the **Profile menu → Info & Contact**.
 
 Permanently delete your account from **Profile Settings → Delete Account**.
 
+For your safety, deletion always starts by confirming it is really you: if you signed in with an email and password you are asked for that password in the confirmation dialog; if you signed in with Google you simply confirm. **If the password is wrong, the dialog stays open with an "Invalid email or password." message under the field and nothing is deleted** — just retype it and press Delete again, or press Cancel to back out.
+
 This removes:
 - Your personal settings and preferences.
 - Any patient profiles where you are the **sole member / admin**.
@@ -177,6 +182,8 @@ Allergy Scheduler offers three tiers:
 | User Settings (theme, language…) | 🔒 | 🔒 | ✅ |
 | Protocol Rules | 🔒 | 🔒 | ✅ |
 | PDF Export | 🔒 | 🔒 | ✅ |
+
+> **Note:** *Creating* protocols is available on every tier — only **customizing their rules** (intervals, notification timings, warning toggles) is Premium. On Free and Plus, protocols simply use the standard default rules.
 
 **Free trial**: New users who have never subscribed receive a **1-month free Premium trial** automatically — no action required.
 

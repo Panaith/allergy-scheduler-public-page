@@ -46,17 +46,19 @@ The project features a streamlined, multi-stage workflow directly integrated int
 | **Production** | Google Play / Web Release | `[Project] Build and Deploy (Production)` |
 | **Git Hygiene** | Pre-commit Cleanup | `[Project] Prepare project` |
 
-For a deep dive into these tracks, see **[DEVELOPMENT.md](DEVELOPMENT.md)**.
+For a deep dive into these tracks and the monorepo architecture, see **[documentation/overview.md](documentation/overview.md)**.
 
 ---
 
 ## 📚 Documentation
 
-The project's documentation is divided into specialized files to ensure clear boundaries and ease of use:
+Each app folder has a human-readable `documentation/overview.md` and an AI agent rulebook `AGENTS.md`:
 
-- 🪄 **[SETUP.md](SETUP.md)**: Local environment setup, operational commands, and troubleshooting for developers.
-- ⚙️ **[DEVELOPMENT.md](DEVELOPMENT.md)**: The technical source of truth. Details on architecture, design patterns, folder structure, and technical guidelines.
-- 👁️ **[AGENTS.md](AGENTS.md)**: AI agent-specific memory, behavioral rules, and major architectural decisions.
+- 🏛️ **[documentation/overview.md](documentation/overview.md)**: Top-level project overview, installation, development tracks, and links to:
+  - **[frontend/documentation/overview.md](frontend/documentation/overview.md)** & **[frontend/AGENTS.md](frontend/AGENTS.md)** (Flutter frontend)
+  - **[backend/documentation/overview.md](backend/documentation/overview.md)** & **[backend/AGENTS.md](backend/AGENTS.md)** (Firebase Cloud Functions & Firestore)
+  - **[ai_tooling/documentation/overview.md](ai_tooling/documentation/overview.md)** & **[ai_tooling/AGENTS.md](ai_tooling/AGENTS.md)** (AI agent tooling: skills, permissions, MCP servers)
+- 👁️ **[AGENTS.md](AGENTS.md)**: Root AI agent instructions: permissions, the agent setup version check, and the rules for every change.
 - 📖 **[USER_MANUAL.md](USER_MANUAL.md)**: End-user guide for patients and staff. Features, subscription tiers, and app flows.
 - 🛡️ **[PRIVACY_POLICY.md](PRIVACY_POLICY.md)**: Details on data collection, usage, and your rights.
 - 🏪 **[STORE_LISTING.md](STORE_LISTING.md)**: Optimized metadata and assets for the Google Play Console store presence.
